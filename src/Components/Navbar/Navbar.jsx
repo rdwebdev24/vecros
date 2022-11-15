@@ -6,7 +6,7 @@ import logo2 from '../../assets/logo2.png'
 import { useRef } from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
-
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
      const [scroll,setScroll] = useState(0);
@@ -40,18 +40,24 @@ const Navbar = () => {
 return (
     <nav ref={nav_ref}>
       <div className="logo">
-          <img src={navLogo} alt="vecros" />
+         <Link to='/'>
+           <img src={navLogo} alt="vecros" />
+         </Link> 
       </div>
           <div onClick={navHandler} className="hamburger">
                <GiHamburgerMenu/>
           </div>
-      <div ref={nav_items_list} className={`nav-items-list ham ${hamburger?'show_nav':''}`}>
-          <div className="nav-items">jeptix autonomy</div>
+      <div ref={nav_items_list} className={`nav-items-list ${hamburger?'show_nav':''}`}>
+          <div className="nav-items">
+               <Link to='jeptix'>
+                    jeptix autonomy
+               </Link>
+          </div>
           <div className="nav-items">
           products
           <div className={`dropdown ${scroll>400?'dropdownScroll':''}`}>
-               <a href="#">ATHERA</a>
-               <a href="#">VECROS CLOUD</a>
+               <Link to='/products/athera'>ATHERA</Link> 
+               <Link to='/products/vercos-cloud'>VECROS CLOUD</Link> 
           </div>
           </div>
           <div className="nav-items">
@@ -73,21 +79,25 @@ return (
                </div>
           </div>
           <div className="nav-items">
-               support
+                    support
                <div className={`dropdown ${scroll>400?'dropdownScroll':''}`}>
-                    <a href="#">FAQS</a>
-                    <a href="#">CONTACT SUPPORT</a>
-                    <a href="#">TRAINING SCHOOL</a>
+                    <Link to='/support/faqs'>FAQS</Link> 
+                    <Link to='/support/contact_support'>CONTACT SUPPORT</Link> 
+                    <Link to='/support/training_school'>TRAINING SCHOOL</Link> 
                </div>
           </div>
           <div className="nav-items">
                about
                <div className={`dropdown ${scroll>400?'dropdownScroll':''}`}>
-                    <a href="#">TEAM</a>
-                    <a href="#">CAREERS</a>
+                    <Link to='/about/team'>TEAM</Link> 
+                    <a href="https://www.linkedin.com/company/vecros/jobs/" target="_blank">CAREERS</a>
                </div>
           </div>
-          <div ref={contact_ref} className="nav-items">contact us</div>
+          <div ref={contact_ref} className="nav-items">
+               <Link to='contact-us'>
+                    contact us
+               </Link>
+          </div>
       </div>
     </nav>
   )

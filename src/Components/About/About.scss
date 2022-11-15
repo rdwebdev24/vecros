@@ -1,0 +1,50 @@
+.about{
+     min-height: 100vh;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: #000;
+     color: #fff;
+     gap: 1.5rem;
+     padding: 0 2rem;
+
+     h1{
+          font-size: 3.5rem;
+     }
+     
+     .about_para{
+          max-height: 55vh;
+          height: 100%;
+          text-align: center;
+          max-width: 60rem;
+          padding:3rem;
+          border-radius: 15px;
+          background-color: rgba(41, 39, 39, 0.411);
+          width: 100%;
+          color: #fff;
+     }
+}
+
+@media screen and (max-width:786px) {
+     .about{
+          h1{
+               font-size: 2.5rem;
+          }
+          
+          .about_para{
+               font-size: 0.8rem;
+               overflow-y: scroll;
+               padding:2rem;
+          }
+     }
+}
+
+@media screen and (max-width:325px) {
+     .about{
+          .about_para{
+               padding:1.5rem;
+          }
+     }
+}

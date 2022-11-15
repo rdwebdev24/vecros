@@ -1,0 +1,198 @@
+.team{
+     min-height: 100vh;
+     height: 100%;
+     display: flex;     
+     flex-direction: column;
+     padding:2rem;
+     
+     .team1{
+          max-width: 85vw;
+          width: 100%;
+          margin: 0 auto;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+
+          .team1_1{
+               display: flex;
+               flex-direction: column;
+               padding: 1rem;
+               justify-content: space-around;
+               box-shadow: 0px 4px 40px rgb(28 28 28 / 15%);
+               transform: translateY(-50%);
+               background: #fff;
+
+               h3{
+                    font-size: 2.5rem;
+               }
+
+               .member{
+                    border-left: 2px solid rgb(0, 72, 82);;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    p{
+                         color: rgb(0,86,98);
+                         font-weight: 500;
+                         margin: 0 0.5rem;
+                    }
+
+                    span{
+                         margin: 0 0.5rem;
+                         font-size: 0.8rem;
+                    }
+               }
+          }
+          .team1_2{
+               max-width: 50rem;
+               width: 100%;
+               padding:0 2rem;
+          }
+     }
+
+     .team2{
+          padding: 2rem 0;
+          max-width: 88vw;
+          margin: 0 auto;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          gap: 1rem;
+
+          .team_card{
+               background: #f8f8f8;
+               box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+               max-width: 17rem;
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               padding: 3rem 0;
+
+               p{
+                    padding-top: 0.3rem;
+                    color: #333;
+                    font-weight: bold;
+                    margin: 0;
+                    
+               }
+
+               img{
+                    border-radius: 50%;
+                    width: 150px;
+                    height: 150px;
+               }
+               .team_member_info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+               }
+               
+               .social_icon{
+                    width: 100%;
+                    max-width: 10rem;
+                    display: flex;
+                    justify-content: space-around;
+                    font-size: 1.5rem;
+                    padding: 1rem 0;
+               }
+          }
+     }
+}
+.team3{
+     display: flex;
+     width: 100%;
+     padding: 3rem 2rem;
+     color: #fff;
+     margin: 0 auto;
+     gap: 2rem;
+     justify-content: center;
+     flex-wrap: wrap;
+
+     .team3_1,.team3_2{
+          text-align: center;
+          max-width: 30rem;
+          width: 100%;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: #090a13;
+          gap: 0.8rem;
+
+          button{
+               padding: 0.6rem 1rem;
+               border-radius: 5px;
+               background: rgb(0,86,98);
+               font-weight: bold;
+               border: 2px solid transparent;
+               color: #fff;
+               &:hover{
+                    background: #fff;
+                    color: #333;
+                    border: 2px solid rgb(0,86,98);
+               }
+          }
+     }
+     
+}
+
+// MEDIA QUERY //  
+@media screen and (max-width:1060px) {
+     .team3{
+          .team3_1,.team3_2{
+               max-width: 25rem;
+          }
+     }
+}
+@media screen and (max-width:900px) {
+     .team3{
+          .team3_1,.team3_2{
+               max-width: 100%;
+          }
+     }
+}
+@media screen and (max-width:786px) {
+     .team{
+          .team1{
+               gap: 1rem;
+               flex-direction: column;
+               .team1_1{
+                    transform: translateY(0%);
+               }     
+          }
+          .team2{
+               .team_card{
+                    max-width: 100%;
+                    flex-direction: row;
+                    justify-content: space-around;
+               }
+          }
+     }
+}
+@media screen and (max-width:425px) {
+     .team{
+          .team2{
+               .team_card{
+                  img{
+                    width: 100px;
+                    height: 100px;
+                  }
+               }
+          }
+     }
+}
+@media screen and (max-width:350px) {
+     .team{
+         
+          .team2{
+               .team_card{
+                    flex-direction: column;
+               }
+          }
+     }
+}
