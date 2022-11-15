@@ -1,0 +1,103 @@
+.footer{
+     background: rgb(32, 32, 32);
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     gap: 1.5rem;
+     padding: 4rem 0;
+     
+     .footer_info{
+          padding: 0 1rem;
+          max-width: 50rem;
+          width: 100%;
+     }
+     
+     .social_icon{
+          display: flex;
+          gap: 1rem;
+          span{
+               font-size: 1.3rem;
+               cursor: pointer;
+               display: grid;
+               place-items: center;
+               background-color: #333;
+               border-radius: 50%;
+               width: 45px;
+               height: 45px;
+               border:1px solid transparent;
+               &:hover{
+                    background: transparent;
+                    border:1px solid #333;
+               }
+          }
+     }
+     
+     .footer1{
+          display: flex;
+          flex-wrap: wrap;
+          width: 85vw;
+          justify-content: space-between;
+          gap: 2rem;
+          
+          .footer1_card{
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start;
+          }
+     }
+     
+     .footer2_wrapper{
+          width:  85vw;
+          display: flex;
+          justify-content: flex-start;
+          gap: 5rem;
+          flex-wrap: wrap;
+
+          .footer2_1,.footer2_2{
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start;
+          }
+          .footer2_1{
+               p{
+                    align-items: center;
+                    display: flex;
+                    gap: 0.5rem;
+               }
+          }
+          .footer2_2{
+               form{
+                    input{
+                         background:rgb(32, 32, 32);;
+                         border: 1px solid #333;
+                         max-width: 20rem;
+                         padding: 0.7rem 1rem;
+                    }
+                    button{
+                         border: 1px solid #333;
+                         background: #005662;
+                         color: #fff;
+                         padding: 0.8rem 1rem;
+                    }
+               }
+          }
+     }
+     .footer3{
+          width: 85vw;
+          text-align: start;
+          p{
+               margin: 0;
+
+               a{
+                    text-decoration: none;
+                    color: #fff;
+                    &:hover{
+                         text-decoration: underline;
+                    }
+               }
+          }
+     }
+}

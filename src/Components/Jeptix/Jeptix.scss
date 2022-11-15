@@ -1,0 +1,72 @@
+.jeptix{
+     display: flex;
+     justify-content: space-around;
+     padding: 4rem 0;
+     
+     .vedio_cont{
+          img{
+               border-radius: 10px;
+               width: 35rem;
+          }
+     }
+     .jeptix_info{
+          width: 30rem;
+          
+          p{
+               font-size: 1.1rem;
+          }
+
+          .para1,.jeptix_bold{
+               font-weight: bold;
+               color: #333;
+          }
+               button{
+                    background: #fff;
+                    padding: 0.6rem 1rem;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    border: 1px solid #333;
+                    &:hover{
+                         color: #fff;
+                         background: #000;
+                         border: 1px solid #333;
+                    }
+
+          }
+     }
+}   
+
+@media screen and (max-width:1024px) {
+     .jeptix{
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          align-items: center;
+          padding: 4rem 2rem;
+
+          .vedio_cont{
+               width: 80%;
+               img{
+                    width: 100%;
+               }
+          }
+
+          .jeptix_info{
+               width: 80%;
+          }
+     }
+}
+@media screen and (max-width:786px) {
+     .jeptix{
+          .vedio_cont{
+               width: 100%;
+               img{
+                    width: 100%;
+               }
+          }
+
+          .jeptix_info{
+               width: 100%;
+          }
+     }
+}

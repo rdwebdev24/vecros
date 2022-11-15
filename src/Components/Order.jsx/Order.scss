@@ -1,0 +1,37 @@
+.order_today{
+     display: grid;
+     place-items: center;
+     padding: 3rem 0;
+     
+     .order_cont{
+          flex-wrap: wrap;
+          color: #fff;
+          background: rgb(0, 86, 98);
+          width: 80vw;
+          border-radius: 10px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 25vh;
+          gap: 1rem;
+          padding:1rem;
+
+          button{
+               color: #333;
+               padding: 0.6rem 1rem;
+               border-radius: 5px;
+               font-weight: bold;
+               border: 1px solid #fff;
+          }
+
+     }
+}
+
+@media screen and (max-width:786px) {
+     .order_today{
+          padding: 3rem 2rem;
+          .order_cont{
+               width: 100%;
+          }
+     }
+}

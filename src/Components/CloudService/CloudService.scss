@@ -1,0 +1,84 @@
+.cloudService{
+     background-image: url('https://vecros.com/static/media/vecros-cloud-background.8a4667261a7e5f263ff28168a9e88903.svg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-height: 100vh;
+     display: flex;
+     padding: 4rem 2rem;
+     flex-direction: column;
+     align-items: center;
+     gap: 0.7rem;
+
+     .cloudSlide_cont{
+          max-width: 850px;
+          width: 100%;
+          height: 100%;
+          .slider_img{
+               height: 80vh;
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-image: url('../../assets/fleet_ops.jpg');
+          }
+     }
+
+     .slide_button{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 3rem;
+          
+          button{
+               font-weight: 500;
+               border: none;
+               border-top: 2px solid transparent;
+               padding: 0.7rem 1rem 0.5rem 1rem;
+               background: transparent;
+               color: #333;
+               font-size: 0.9rem;
+
+               &:hover{
+                    background-color: #eee;
+                    border-top: 2px solid rgb(0,86,98);
+               }
+          }
+          .active_btn{
+               color: rgb(0,86,98);
+               border-top: 2px solid rgb(0,86,98);
+          }
+     }
+     .slide_button2{
+          display: none;
+     }
+}
+
+@media screen and (max-width:375px) {
+     .cloudService{
+          padding: 4rem 1rem;
+          text-align: center;
+     }
+}
+@media screen and (max-width:550px) {
+     .cloudService{
+          .slide_button{
+               display: none;
+          }
+          .slide_button2{
+               display: flex;
+               justify-content: space-around;
+               padding-top: 2rem;
+
+               button{
+                    padding: 0.6rem 1rem;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    background: rgb(0, 86, 98);
+                    color: #fff;
+                    border: 1px solid transparent;;
+                    &:hover{
+                         background: #fff;
+                         color: #333;
+                         border: 1px solid rgb(0, 86, 98);;
+                    }
+               }
+          }
+     }
+}

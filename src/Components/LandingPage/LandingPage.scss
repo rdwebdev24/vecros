@@ -1,0 +1,111 @@
+.landingPage_wrapper{
+     height: 100vh;
+     background: #000;
+     background-image: url('../../assets/landingPage.png');
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: 100% 100%;
+     display: flex;
+     align-items: center;
+     position: relative;
+     
+     .landing_info{
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          color: #fff;
+          margin-left: 6rem;
+          
+          h1{
+               font-weight: bold;
+          }
+
+          p{
+               font-size: 1.5rem;
+          }
+          
+          .landing_button{
+               display: flex;
+               flex-wrap: wrap;
+               gap: 1rem;
+
+               button{
+                    padding: 0.6rem 1rem;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    border: 1px solid #fff;
+
+                    &:nth-child(1){
+                         color: #fff;
+                         background-color: #000;
+                         border: 1px solid #fff;
+                         &:hover{
+                              color: #333;
+                              background-color: #fff;
+                         }
+                    }
+                    &:nth-child(2){
+                         color: #333;
+
+                         &:hover{
+                              background-color: #000;
+                              border: 1px solid #fff;
+                              color: #fff;
+                         }
+                    }
+               }
+          }
+     }
+     .arrow{
+          cursor: pointer;
+          font-size: 2rem;
+          color: #fff;
+          position: absolute;
+
+     }
+     .left-arrow{
+          left: 1%;
+     }
+     .right-arrow{
+          right: 1%;
+     }
+}
+
+@media screen and (max-width:425px) {
+     .landingPage_wrapper{
+          
+     }     
+}
+@media screen and (max-width:786px) {
+     .landingPage_wrapper{
+          justify-content: center;
+          .landing_info{
+               margin-left: 0;
+               margin-top: 6rem;
+               padding: 1rem;
+               align-self: flex-start;
+               align-items: center;
+               h1{
+                    font-size: 2.2rem;
+               }
+               p{
+                    font-size: 1.1rem;
+               }
+          }       
+          .arrow{
+               top: 65%;
+               font-size: 1.3rem;
+          }
+          .left-arrow{
+               left: 2%;
+          }
+          .right-arrow{
+               right: 2%;
+          }
+     }     
+}
+@media screen and (max-width:1024px) {
+     .landingPage_wrapper{
+          background-position: 100% 100%;
+     }     
+}

@@ -1,0 +1,81 @@
+.autonomous{
+     background-color: #000;
+     background-image: url('https://vecros.com/static/media/autonomous-capture-background.78bc7eab707145e33b5d831f6b18220c.svg');
+     background-repeat: no-repeat;
+     background-position: 0% 100%;
+     display: flex;
+     color: #fff;
+     flex-direction: row-reverse;
+     justify-content: space-around;
+     padding: 4rem 0;
+     align-items: center;
+     
+     .autonomous_img{
+          text-align: center;
+          img{
+               width: 75%;
+          }
+     }
+
+     .autonomous_info{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: flex-start;
+          margin-left: 4rem;
+          gap: 1rem;
+
+          button{
+               padding: 0.6rem 1rem;
+               border-radius: 5px;
+               background: transparent;
+               color: #fff;
+               border: 1px solid #fff;
+               &:hover{
+                    background: #fff;
+                    color: #333;
+               }
+          }
+
+     }
+
+}
+
+@media screen and (max-width:786px) {
+     .autonomous{
+          background-position: 0% 0%;
+          background-size: contain;
+          flex-direction: column-reverse;
+          gap: 2rem;
+          
+          .autonomous_img{
+               text-align: center;
+               img{
+                    width: 75%;
+               }
+          }
+     
+          .autonomous_info{
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start;
+               align-self: flex-start;
+               margin-left: 4rem;
+               gap: 1rem;
+     
+               button{
+                    padding: 0.6rem 1rem;
+                    border-radius: 5px;
+                    background: transparent;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    &:hover{
+                         background: #fff;
+                         color: #333;
+                    }
+               }
+     
+          }
+     
+     }
+}
